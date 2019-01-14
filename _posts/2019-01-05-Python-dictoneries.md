@@ -6,6 +6,8 @@ tags: Python3-tutorials
 comments: true
 ---
 
+Hi There, In this post we'll see python dictonaries and dictonary methods.
+
 * Python **dictionary** is an unordered collection of items. While other compound data types have only value as an element, a dictionary has a key: value pair. Dictionaries are optimized to retrieve values when the key is known.
 
 ###### **Example dictionary**
