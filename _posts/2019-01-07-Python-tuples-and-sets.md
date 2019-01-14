@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python dictonary comprehensions and usage"
+title:  "Python tuples and sets"
 categories: Python3-Tutorial
 tags: Python3-tutorials
 comments: true
