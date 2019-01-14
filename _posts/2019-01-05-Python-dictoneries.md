@@ -11,10 +11,12 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 * Python **dictionary** is an unordered collection of items. While other compound data types have only value as an element, a dictionary has a key: value pair. Dictionaries are optimized to retrieve values when the key is known.
 
 ###### **Example dictionary**
+* **Example:**
 
 		my_dict = {'name': 'Gopikrishna', 'age': 24, 'single': True, 1 : 'Lucky Number'}
 
-###### **Example dictionary**
+* **Example dictionary**
+
 
 		>>> student = dict(name="Stark", age=28, male=True)
 		>>> student
@@ -22,6 +24,7 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 		>>>
 
 ###### **Accessing dictonary value using key**
+* **Usage:**
 
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> #Reading dict value using key 'name'
@@ -92,6 +95,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ###### **clear() method Deletes all items from a dict**
 
+* **Usage:**
+
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> student.clear()
 		>>> student
@@ -105,6 +110,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 * Returns copy of the dict.
 
 ###### **copy() method can create copy of a dict**
+
+* **Usage:**
 
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> student_copy = student.copy() #Creating student dict copy and storing in student_copy
@@ -127,6 +134,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ###### **fromkeys() method to give same value for all keys**
 
+* **Usage:**
+
 		>>> my_dict = {}.fromkeys(['name', 'age', 'phone', 'email'], 'unknown')
 		>>> my_dict
 		{'phone': 'unknown', 'age': 'unknown', 'name': 'unknown', 'email': 'unknown'}
@@ -139,6 +148,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 * Returns corresponding key, value pair which was removed.
 
 ###### **pop() method to delete corresponding key, value pair**
+
+* **Usage:**
 
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> student
@@ -157,6 +168,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ###### **popitem() method to delete a random key, value pair**
 
+* **Usage:**
+
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> student.popitem()
 		('age', 28)
@@ -174,6 +187,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ###### **update() method to delete a random key, value pair**
 
+* **Usage:**
+
 		>>> my_list = {'male': True, 'name': 'Stark'}
 		>>> my_list.update({"email": "tony@stark.com", "avenger": True})
 		>>> my_list
@@ -183,6 +198,7 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ##### **Iterating Dictionarieswith for loop**
 
+* **Usage:**
 
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> for key, value in student.items():
@@ -200,6 +216,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 
 ##### **Check exestance of a key in dictonary uisng in keyword**
 
+* **Usage:**
+
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> 'age' in student #Will return True if key is presented
 		True
@@ -208,6 +226,8 @@ Hi There, In this post we'll see python dictonaries and dictonary methods.
 		>>>
 
 ##### **Check exestance of a value in dictonary**
+
+* **Usage:**
 
 		>>> student = {'age': 28, 'male': True, 'name': 'Stark'}
 		>>> 'Stark' in student.values() #Will return True if value is presented

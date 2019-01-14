@@ -22,7 +22,7 @@ Hi There, In this post we'll see python lists and lists methods
 
 * List is a collection data type, which can store all datatype values, List is ordered and changeable. and it allows duplicate members.
 
-##### Example List
+* **Example List**
 
 		my_list = [1, 'Hi', True, [1, 2], {1 : A}]
 

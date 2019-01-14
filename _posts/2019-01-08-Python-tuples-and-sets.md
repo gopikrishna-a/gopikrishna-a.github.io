@@ -129,7 +129,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 
 ###### Set Union (|)
 	
-	* Combines two sets into on by elemenating duplicates
+* Combines two sets into on by elemenating duplicates
 
 		>>> class_one = {'tom', 'tony', 'chris'}
 		>>> class_two = {'rocket', 'groot', 'drax'}
@@ -141,7 +141,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 
 ###### Set Intersection (&)
 
-	* Creates new set with the values that are in both sets
+* Creates new set with the values that are in both sets
 
 		>>> class_one = {'tom', 'tony', 'chris', 'groot', 'rocket'}
 		>>> class_two = {'rocket', 'groot', 'drax', 'thor'}
