@@ -12,7 +12,7 @@ Hi There, In this post we'll learn more about python functions.
 
 * In Python We can also pass N no. of arguments to a function as per our requirement. For this we have to use <span style="color:red">`*args`</span> as parameter to that function.
 
-**Example:**
+* **Example:**
 
 		>>> def sum_all_nums(*args):
 		...     total = 0
