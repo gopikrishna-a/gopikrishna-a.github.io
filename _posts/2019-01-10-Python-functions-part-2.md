@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python functions and usage Part-2"
+title:  "Python functions and usage part-2"
 categories: Python3-Tutorial
 tags: Python3-tutorials
 comments: true
@@ -63,7 +63,7 @@ Hi There, In this post we'll learn more about python functions.
 
 ##### Tuple Unpacking
 
-* **Using `*` as an argument**
+* **Using `*` as an argument:**
 
 		>>> def unpack(*args):
 		...     return args
@@ -83,7 +83,7 @@ Hi There, In this post we'll learn more about python functions.
 
 ##### Dictonary Unpacking
 
-* **Using `**` as an argument**
+* **Using `**` as an argument:**
 
 
 		>>> def display_names(a, b, c):

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python functions and usage Part-1"
+title:  "Python functions and usage part-1"
 categories: Python3-Tutorial
 tags: Python3-tutorials
 comments: true
@@ -127,7 +127,7 @@ here item is an argument.
 * Inside the function, the arguments are assigned to variables called parameters
 
 ###### Here is an example of a user-defined function that takes an argument:
-* ** Example
+* **Example:**
 
 		 >>> def add(num1, num2):
 		...     return num1 + num2 #returningsum of num1 and num2
@@ -177,12 +177,12 @@ here item is an argument.
 + Makes the function more reliable
 
 
-##### What can br default parameters
+##### What can be default parameters
 
 + Default parameters can be of any datatype i.e lists, dictonaries, string, bool, int, float
 + Default parameters can also be a function
 
-* **Example**
+* **Example:**
 
 		>>>
 		>>> def add(a, b):
@@ -221,7 +221,7 @@ here item is an argument.
 
 * Variables created in the function are scoped in that function
 
-* **Example**
+* **Example:**
 
 		>>> def say_hello():
 		...     name = "Tony Stark"

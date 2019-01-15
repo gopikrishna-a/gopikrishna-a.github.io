@@ -20,7 +20,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 
 ###### Tuple index()
 * The method **index()** finds the index of a passed value from the Tuple.
-* **Syntax**
+* **Syntax:**
 
 		Tuple.index(item) # Takes three  arguments.
 
@@ -36,7 +36,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 
 ###### Tuple count()
 * The method **count()** appends a passed obj into the existing Tuple.
-* **Syntax**
+* **Syntax:**
 
 		Tuple.count(obj) # Takes only one argument
 
@@ -63,7 +63,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 ###### Set add()
 
 * The method **add()** adds the new item to the existing set.
-* **Syntax**
+* **Syntax:**
 
 		Tuple.add(item)
 
@@ -82,7 +82,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 ###### Set remove()
 
 * The method **remove()** removes the item from the set.
-* **Syntax**
+* **Syntax:**
 
 		Tuple.remove(item)
 
@@ -107,7 +107,7 @@ Hi There, In this post we'll learn about python datatypes tuples and sets.
 ###### Set discard()
 
 * The method **discard()** removes the item from the set if item is presented else returns None.
-* **Syntax**
+* **Syntax:**
 
 		Tuple.discard(item)
 
