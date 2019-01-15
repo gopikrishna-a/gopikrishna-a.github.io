@@ -16,6 +16,7 @@ Hi There, In this post we'll learn about lambda and other built-in functions in 
 
 		lambda arguments: expression
 
+* **Example usage:**
 
 		>>> def add(a, b, c):
 		...     return a + b + c
@@ -27,7 +28,6 @@ Hi There, In this post we'll learn about lambda and other built-in functions in 
 
 * The above example is a normal function which is having only return statement. We can implement the above add operation using labmada function.
 
-* **Example:**
 
 		>>> add = lambda a, b, c: a + b + c
 		>>>
