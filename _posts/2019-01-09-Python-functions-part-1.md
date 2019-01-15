@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python functions and usage"
+title:  "Python functions and usage Part-1"
 categories: Python3-Tutorial
 tags: Python3-tutorials
 comments: true
