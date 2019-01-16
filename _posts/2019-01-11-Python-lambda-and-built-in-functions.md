@@ -145,7 +145,7 @@ Hi There, In this post we'll learn about lambda and other built-in functions in 
 		>>> sorted(a, reverse=True)
 		[7, 6, 4, 3, 1]
 
-* **Example usage-1:**
+* **Example usage-2:**
 
 
 		#Sorting by key name in list of dict
@@ -155,3 +155,27 @@ Hi There, In this post we'll learn about lambda and other built-in functions in 
 		[{'name': 'aviry'}, {'name': 'ellen'}, {'name': 'rock'}]
 		>>>
 
+
+##### zip():
+
+* The zip() function take iterables (can be zero or more), makes iterator that aggregates elements based on the iterables passed, and returns an iterator of tuples.
+
+* **syntax:**
+
+		zip(*iterables)
+
+* iterables - can be built-in iterables (like: list, string, dict)
+
+* If no parameters are passed, zip() returns an empty iterator
+
+
+* **Example:**
+
+		>>> names = ['rob', 'tony', 'john', 'alex']
+		>>>
+		>>> ages = ['23', '24', '30', 29]
+		>>>
+		>>> res = zip(names, ages)
+		>>> list(res)
+		[('rob', '23'), ('tony', '24'), ('john', '30'), ('alex', 29)]
+		>>>
