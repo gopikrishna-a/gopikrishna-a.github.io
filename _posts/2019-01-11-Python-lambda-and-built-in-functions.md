@@ -79,12 +79,79 @@ Hi There, In this post we'll learn about lambda and other built-in functions in 
 
 		#Printing the names that starts with letter a
 
-				>>> a_names  = filter(lambda name: name[0] == 'a', names)
-				>>>
-				>>> a_names
-				<filter object at 0x00680E90>
-				>>>
-				>>> list(a_names)
-				['alex', 'akon', 'aviry']
-				>>>
+		>>> a_names  = filter(lambda name: name[0] == 'a', names)
+		>>>
+		>>> a_names
+		<filter object at 0x00680E90>
+		>>>
+		>>> list(a_names)
+		['alex', 'akon', 'aviry']
+		>>>
+
+
+##### any() and all():
+
+* **any()**
+
+* Takes one argument and the argument should be an iterable i.e list, tuple
+* Returns True if any item in the list is True
+* Returns False if all items in list are False
+
+* **Example usage:**
+
+		>>> any([True, False, True])
+		True
+		>>>
+		>>> any((False, False, False))
+		False
+		>>>
+
+
+* **all()**
+
+* Takes one argument and the argument should be an iterable i.e list, tuple
+* Returns True if all item in the list is True
+* Returns False if any items in list are False
+
+* **Example usage:**
+
+		>>> all([True, False, True])
+		False
+		>>> all((True, True, True))
+		True
+		>>>
+
+
+##### sorted():
+
+* The sorted() method sorts the elements of a given iterable in a specific order - Ascending or Descending.
+
+* **syntax:**
+
+		sorted(iterable[, key][, reverse])
+
++ **sorted()** takes two three parameters and returns a sorted list from the given iterable:
+- **iterable** - sequence (string, tuple, list) or collection (set, dictionary, frozen set) or any iterator 
+- **reverse** (Optional) - If true, the sorted list is reversed (or sorted in Descending order)
+- **key** (Optional) - function that serves as a key for the sort comparison
+
+
+* **Example usage-1:**
+
+		>>> a = [1, 3, 4, 6, 7]
+		>>>
+		>>> sorted(a)
+		[1, 3, 4, 6, 7]
+		>>> sorted(a, reverse=True)
+		[7, 6, 4, 3, 1]
+
+* **Example usage-1:**
+
+
+		#Sorting by key name in list of dict
+		>>> names = [{'name': 'rock'}, {'name': 'aviry'}, {'name': 'ellen'}]
+		>>>
+		>>> sorted(names, key=lambda name: name['name'])
+		[{'name': 'aviry'}, {'name': 'ellen'}, {'name': 'rock'}]
+		>>>
 
