@@ -6,7 +6,7 @@ tags: Python3-tutorials
 comments: true
 ---
 
-Hi There, In this post we will learn abot python errors, execptions and will learn how to handle these exceptions.
+Hi There, In this post we will learn about python errors, execptions and will learn how to handle these exceptions.
 
 
 Three kinds of errors can occur in a program: syntax errors, runtime errors, and semantic errors. It is useful to distinguish between them in order to track them down more quickly.

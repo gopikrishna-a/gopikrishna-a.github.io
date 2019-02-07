@@ -6,7 +6,7 @@ tags: Python3-tutorials
 comments: true
 ---
 
-Hi There, In this post we will learn abot python Object oriented programming (OOP).
+Hi There, In this post we will learn about python Object oriented programming (OOP).
 
 Object oriented programming was developed in the 1960's for a language called samula67 and later used for smalltalk language.
 
@@ -21,7 +21,7 @@ Object oriented programming was developed in the 1960's for a language called sa
 
 ##### Procedural Vs Object(OOP) paradgim:
 
-+ procedural paradigm:
++ Procedural paradigm:
 
 
         def increment(arg):
@@ -65,7 +65,7 @@ Object oriented programming was developed in the 1960's for a language called sa
 + OOP is a universal paradigm
 + Learning OOP is a necessary next step into larger world of software engineering
 
-##### OOP three pillars of OOP:
+##### Three pillars of OOP:
 
 * Encapsulation
 * Inheritance
@@ -135,3 +135,118 @@ Here in the above the **self** is an argument which takes the instance as argume
 
 ##### Encapsulation:
 
+**Encapsulation:** Encapsulation is grouping of public and private attributes and methods into a class, making abstraction possible.
+
+**Abstraction:** Exposing only relevant data in a class interface, hiding private attributes and methods from user
+
+* In object oriented programming, you can restrict access to methods and variables. This can prevent the data from being modified by accident and is known as encapsulation.
+
+* Python does not have the private keyword, unlike some other object oriented languages, but encapsulation can be done.
+
+**Encapsulation implimentation example:**
+
+Imagine we have created a banking program for a an ATM which has the attribute 'current_balance'
+
+we don't want the user of the ATM to be able to access this variable directly because they might be able to overwrite it with a huge amount of money.
+
+* In order to make it in-acceable to the user direcly we need to make 'current_balance' attribute as private
+
+
+        class BankAccount(object):
+
+            def __init__(self, account_name='Current Account', balance=300):
+                self.account_name = account_name
+                self.balance = balance
+                
+        account = BankAccount()
+        print(account.account_name)
+        print(account.balance)
+        account.balance = 2000000
+        print(account.balance)
+
+        #Program output
+        $ python encapsulation.py
+        Current Account
+        300
+        2000000
+
+* As you can see in the above program output the user was able to access and rewrite account.balance attribute.
+
+* To make balance as private we need to add double underscore to that variable as follows
+
+
+        class BankAccount(object):
+
+            def __init__(self, account_name='Current Account', balance=300):
+                self.__account_name = account_name
+                self.__balance = balance
+                
+        account = BankAccount()
+        print(account.__account_name)
+        print(account.__balance)
+        account.__balance = 2000000
+        print(account.__balance)
+
+        #Program output
+        $ python encapsulation.py
+        Traceback (most recent call last):
+          File ".\encapsulation.py", line 12, in <module>
+            print(account.__account_name)
+        AttributeError: 'BankAccount' object has no attribute '__account_name'
+
+* By adding __ to the balance and account_name varibale we are making these variables as private. with this the user won't be able to access these attributes.
+
+* But when user withdraw some money from balace we need to reduce/change the balance value. this can be achived by using setter method inside the class because methods inside the class can access the private attributes.
+
+        class BankAccount(object):
+
+            def __init__(self, account_name='Current Account', balance=300):
+                self.__account_name = account_name
+                self.__balance = balance
+
+            def balance_getter(self):
+                print(f'Your current balance is: {self.__balance}')
+
+            def balance_setter_withdraw(self, value):
+                if value <= self.__balance:
+                    self.__balance = self.__balance - value
+                    print(f'New balance is {self.__balance}')
+                else:
+                    print('You don\'t have enough funds')
+
+        account = BankAccount()
+
+        while True:
+            print('====Select your optiion====')
+            print('1. Check account balance')
+            print('2. Withdraw funds')
+            option = int(input(''))
+            if option == 1:
+                account.balance_getter()
+            elif option == 2:
+                value = int(input('Enter withdraw amount: '))
+                account.balance_setter_withdraw(value)
+            else:
+                print('plz choose valid choice')
+
+        #Sample execution output for above program
+        ====Select your optiion====
+        1. Check account balance
+        2. Withdraw funds
+        1
+        Your current balance is: 300
+        ====Select your optiion====
+        1. Check account balance
+        2. Withdraw funds
+        2
+        Enter withdraw amount: 50
+        New balance is 250
+        ====Select your optiion====
+        1. Check account balance
+        2. Withdraw funds
+        2
+        Enter withdraw amount: 300
+        You don't have enough funds
+        ====Select your optiion====
+        1. Check account balance
+        2. Withdraw funds
