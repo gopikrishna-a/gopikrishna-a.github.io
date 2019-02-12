@@ -250,3 +250,73 @@ we don't want the user of the ATM to be able to access this variable directly be
         ====Select your optiion====
         1. Check account balance
         2. Withdraw funds
+
+
+##### Inheritance:
+
+A key feature of OOP is the ability to define a class which inherits from another class (a "base" or "parent" class)
+
+In Python, inheritance works by passing the parent class as an argument to the defination of a child class
+
+* **Inheritance Example:**
+
+        >>> class Time(object):
+        ...     """This is a Super class"""
+        ...     def get_time(self):
+        ...         return time.strftime("%H:%M:%S")
+        ...
+        >>> class Date(Time):
+        ...     """This is a child class"""
+        ...     def get_date(self):
+        ...         return time.strftime("%d/%m/%Y")
+        ...
+        >>> tm = Time()
+        >>> print(tm.get_time())
+        12:22:32
+        >>>
+        >>> dt = Date()
+        >>> print(dt.get_date())
+        12/02/2019
+        >>> print(dt.get_time())
+        12:22:50
+        >>>
+        >>> print(tm.get_date())
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        AttributeError: 'Time' object has no attribute 'get_date'
+        >>>
+        >>> issubclass(Time, Date)
+        False
+        >>>
+        >>> issubclass(Date, Time)
+        True
+        >>>
+        >>>isinstance(tm, Time)
+        True
+        >>>
+        >>>isinstance(dt, Time)
+        True
+        >>>
+        >>>isinstance(tm, Date)
+        False
+        >>>
+        >>>isinstance(dt, Date)
+        True
+
+
+* In the above example we have defined two classes i.e Time() and Date()
+* The class Date() is a child class which is inheriting Time() class.
+* The class Timne() is parent class.
+* Since we inherited Time() class in Date(), the attributes and methods aviliable in Time() can be accesses by Date() class.
+
+* **Inheritance terms:**
+
++ An inheriting class ex: Cat(Animal) can be called with following names
+  - Child class or derived class or subclass
++ An inherited class ex: Animal(object) can be called with following names
+  - Parent class or base class or super class
+
+
+* Two built-in functions isinstance() and issubclass() are used to check inheritances.
+* Function isinstance() returns True if the object is an instance of the class or other classes derived from it. Similarly, issubclass() is used to check for class inheritance.
+* Each and every class in Python inherits from the base class object
