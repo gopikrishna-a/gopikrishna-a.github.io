@@ -88,3 +88,11 @@ with open('sample.csv', 'a') as csv_file:
 {% endhighlight %}
 
 In the above writer_csv.py we are writing a new list `new_line = ['Rob', '28', 'rob@hotmail.com']` into `sample.csv` file.
+
+
+
+
+
+
+CSV:
+

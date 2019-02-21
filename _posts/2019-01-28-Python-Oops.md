@@ -320,3 +320,162 @@ In Python, inheritance works by passing the parent class as an argument to the d
 * Two built-in functions isinstance() and issubclass() are used to check inheritances.
 * Function isinstance() returns True if the object is an instance of the class or other classes derived from it. Similarly, issubclass() is used to check for class inheritance.
 * Each and every class in Python inherits from the base class object
+
+
+##### Polymorphism (Many shapes)
+
+A key principle in OOP is the idea of Polymorphism - An object can take on many forms
+
+The same class method works in a similar way for different classes
+
+The same operation works for different kinds of objects
+
+
+1. The same class method works in a similar way for different classes
+
+Ex:
+
+        >>> sample_list = [1, 2, 3]
+        >>> sample_tuple = (1, 2, 3)
+        >>> sample_str = "Hello World"
+        >>>
+        >>> len(sample_list)
+        3
+        >>> len(sample_tuple)
+        3
+        >>> len(sample_str)
+        11
+        >>>
+
+
+
+        class Animal(object):
+
+            def speak(self):
+                raise NotImplementedError("Subclass needs to be implemented in this method")
+
+        class Dog(Animal):
+
+            def speak(self): 
+                return "Woof!!"
+
+        class Cat(Animal):
+
+            def speak(self):
+                return "Meow!"
+
+* Here we have three class Animal, Dog, Cat 
+* The Dog and Cat classes are subclasses of Animal class
+* Each of the these three classes have saperate method called speak()
+
+* Here we are using the same method to do the different things based on from which class the method was called
+
+
+2. The same operation works for different kinds of objects
+
+        >>> 8 + 2
+        10
+        >>>
+        >>> "8" + "2"
+        '82'
+        >>>
+
+Here the same operation works differently based on the objects kind
+
+
+##### Special Methods
+
+Ex: 
+
+        >>> 8 + 2
+        10
+        >>>
+        >>> "8" + "2"
+        '82'
+        >>>
+
+
+Here in the above example the + operator is shorthand for special method called __add__() that  gets called on the first operand
+
+The most common use case of special methods is to make classes look pretty in strings
+
+**Ex:**
+
+        >>> class Sample(object):
+        ...     pass
+        ...
+        >>> obj = Sample()
+        >>> print(obj)
+        <__main__.Sample object at 0x00490C70>
+        >>>
+
+* The __repr__ method is one of the several ways to provide a nicer string representation
+
+**Ex:**
+
+        >>> class Sample(object):
+        ...     def __init__(self, msg="Hello World"):
+        ...         self.msg=msg
+        ...     def __repr__(self):
+        ...         return self.msg
+        ...
+        >>> obj = Sample()
+        >>> print(obj)
+        Hello World
+        >>>
+
+* We can use other python magic (dunder) methods inside our class as follows
+
+        >>> class Human(object):
+        ...     def __init__(self, first, last, age):
+        ...         self.first = first
+        ...         self.last = last
+        ...         self.age = age
+        ...     def __repr__(self):
+        ...         return f"Human name is {self.first} {self.last}"
+        ...     def __len__(self):
+        ...         return self.age
+        ...
+        >>> obj = Human("Tony", "Stark", 35)
+        >>> print(obj)
+        Human name is Tony Stark
+        >>> print(len(obj))
+        35
+        >>>
+
+
+##### The __init__ constructor
+
+
+classes in python can have special __init__ method, which gets called autometically every time when we create instance of that class.
+
+**Ex:**
+
+        >>> class User(object):
+        ...     def __init__(self):
+        ...         print("A new user has been created")
+        ...
+        >>> user1 = User()
+        A new user has been created
+        >>> user2 = User()
+        A new user has been created
+        >>>
+
+Usually __init__ is used to initilize the data that each user has
+
+        >>> class User(object):
+        ...     def __init__(self, name):
+        ...         self.name = name
+        ...
+        >>>
+        >>> user1 = User("Thor")
+        >>> user1.name
+        'Thor'
+        >>>
+        >>> user2 = User("Hulk")
+        >>> user2.name
+        'Hulk'
+        >>>
+
+
+
