@@ -331,9 +331,9 @@ The same class method works in a similar way for different classes
 The same operation works for different kinds of objects
 
 
-1. The same class method works in a similar way for different classes
+* The same class method works in a similar way for different classes
 
-Ex:
+* **Ex:**
 
         >>> sample_list = [1, 2, 3]
         >>> sample_tuple = (1, 2, 3)
@@ -371,7 +371,7 @@ Ex:
 * Here we are using the same method to do the different things based on from which class the method was called
 
 
-2. The same operation works for different kinds of objects
+* The same operation works for different kinds of objects
 
         >>> 8 + 2
         10
@@ -385,7 +385,7 @@ Here the same operation works differently based on the objects kind
 
 ##### Special Methods
 
-Ex: 
+* **Ex:**
 
         >>> 8 + 2
         10
@@ -399,7 +399,7 @@ Here in the above example the + operator is shorthand for special method called 
 
 The most common use case of special methods is to make classes look pretty in strings
 
-**Ex:**
+* **Ex:**
 
         >>> class Sample(object):
         ...     pass
@@ -449,7 +449,7 @@ The most common use case of special methods is to make classes look pretty in st
 
 classes in python can have special __init__ method, which gets called autometically every time when we create instance of that class.
 
-**Ex:**
+* **Ex:**
 
         >>> class User(object):
         ...     def __init__(self):
@@ -461,7 +461,7 @@ classes in python can have special __init__ method, which gets called autometica
         A new user has been created
         >>>
 
-Usually __init__ is used to initilize the data that each user has
+* Usually __init__ is used to initilize the data that each user has
 
         >>> class User(object):
         ...     def __init__(self, name):
