@@ -411,7 +411,7 @@ The most common use case of special methods is to make classes look pretty in st
 
 * The __repr__ method is one of the several ways to provide a nicer string representation
 
-**Ex:**
+* **Ex:**
 
         >>> class Sample(object):
         ...     def __init__(self, msg="Hello World"):
