@@ -6,3 +6,4 @@ $(document).ready(function(){
     speed: 2000
   });
 });
+
