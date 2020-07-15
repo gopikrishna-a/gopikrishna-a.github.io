@@ -25,4 +25,4 @@ Important Keywords and their definnations:
 class: class is a bluee print
 Object: Object is a physical existance of a class
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt sample-class](https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png?raw=true)
