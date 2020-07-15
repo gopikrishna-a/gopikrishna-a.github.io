@@ -22,7 +22,7 @@ OOP is a paradigm (a pattern or model) for code organization and design
 
 Important Keywords and their definnations:
 
-**Class:** class is a bluee print
+**Class:** Class is a blue print
 **Object:** Object is a physical existance of a class
 
-<img src="https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png" width="100" height="100">
+<img src="../img/post_images/sample_class.png" width="100" height="100">
