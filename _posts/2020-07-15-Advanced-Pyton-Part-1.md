@@ -26,7 +26,4 @@ OOP is a paradigm (a pattern or model) for code organization and design
 
 **Object:** Object is a physical existance of a class
 
-![Samplee-Python-Class](https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png)
-
-
-<img src="https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png" width="200" height="400" />
+<img src="https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png" width="400" height="400" />
