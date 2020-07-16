@@ -20,9 +20,13 @@ OOP is a paradigm (a pattern or model) for code organization and design
 + OOP is the primary paradigm for software design worldwide
 
 
-Important Keywords and their definnations:
+##### Important Keywords and definations:
 
 **Class:** Class is a blue print
+
 **Object:** Object is a physical existance of a class
 
-<img src="../img/post_images/sample_class.png" width="100" height="100">
+![Samplee-Python-Class](https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png)
+
+
+<img src="https://github.com/gopikrishna-a/gopikrishna-a.github.io/blob/master/img/posts_images/sample_class.png" width="200" height="400" />
